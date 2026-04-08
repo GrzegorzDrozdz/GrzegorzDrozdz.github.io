@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Personal portfolio of Grzegorz Dróżdż" />
+    <meta name="author" content="Grzegorz Dróżdż" />
+    <title>Grzegorz Dróżdż | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/page_img/icon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grzegorzdrozdz.github.io/" />
+    <meta property="og:title" content="Grzegorz Dróżdż | Portfolio - Data Science & AI" />
+    <meta property="og:description" content="Projekty z zakresu Machine Learning, Computer Vision i analityki danych. Sprawdź moje portfolio." />
+    <meta property="og:image" content="https://grzegorzdrozdz.github.io/assets/img/og-image.png" />
+    <meta property="og:image:alt" content="Podgląd portfolio Grzegorza Dróżdża - projekty Data Science i AI" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Grzegorz Dróżdż | Portfolio" />
+    <meta name="twitter:description" content="Projekty z zakresu ML i AI." />
+    <meta name="twitter:image" content="https://grzegorzdrozdz.github.io/assets/img/og-image.png" />
+
+    <link rel="canonical" href="https://grzegorzdrozdz.github.io/" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        /* === LOGIKA TŁUMACZENIA === */
+        html[lang="pl"] .lang-en { display: none !important; }
+        html[lang="en"] .lang-pl { display: none !important; }
+
+        .lang-en, .lang-pl {
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .toggle-lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .toggle-lang-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grzegorzdrozdz.github.io/" />
+    <meta property="og:title" content="Grzegorz Dróżdż | Portfolio - Data Science & AI" />
+    <meta property="og:description" content="Projekty z zakresu Machine Learning, Computer Vision i analityki danych. Sprawdź moje portfolio." />
+    <meta property="og:image" content="https://grzegorzdrozdz.github.io/assets/img/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Grzegorz Dróżdż | Portfolio" />
+    <meta name="twitter:description" content="Projekty z zakresu ML i AI." />
+    <meta name="twitter:image" content="https://grzegorzdrozdz.github.io/assets/img/og-image.png" />
+
+    <link rel="canonical" href="https://grzegorzdrozdz.github.io/" />
+</head>
+
+<body id="page-top">
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="cursor-dot" data-cursor-dot></div>
+<div class="cursor-outline" data-cursor-outline></div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top"><b>Grzegorz Dróżdż</b></a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#profile"><span class="lang-en">Profile</span><span class="lang-pl">Profil</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#education"><span class="lang-en">Education</span><span class="lang-pl">Wykształcenie</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><span class="lang-en">Skills</span><span class="lang-pl">Umiejętności</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects"><span class="lang-en">Projects</span><span class="lang-pl">Projekty</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience"><span class="lang-en">Experience</span><span class="lang-pl">Doświadczenie</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications"><span class="lang-en">Certifications</span><span class="lang-pl">Certyfikaty</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><span class="lang-en">Contact</span><span class="lang-pl">Kontakt</span></a></li>
+
+                <li class="nav-item ms-lg-3">
+                    <a class="nav-link toggle-lang-btn text-white bg-dark rounded border border-secondary px-3 py-2 mt-2 mt-lg-0" onclick="toggleLang()">
+                        <span class="lang-en"><img src="https://flagcdn.com/w20/pl.png" width="20" alt="PL" class="me-2"> Polski</span>
+                        <span class="lang-pl"><img src="https://flagcdn.com/w20/gb.png" width="20" alt="EN" class="me-2"> English</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead" style="padding-bottom: 4rem;">
+    <div class="container d-flex flex-column align-items-center justify-content-center text-center" style="position: relative; z-index: 1;">
+        <img
+                src="assets/img/page_img/zdjecie_profilowe_przyciete.PNG"
+                alt="Grzegorz Dróżdż Profile Photo"
+                style="
+                max-width: clamp(175px, 50vw, 275px);
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                display: block;
+                margin: 0 auto;
+                margin-top: 6rem;
+                margin-bottom: 1rem;
+            "
+        />
+
+        <h1 class="masthead-heading text-uppercase mb-3">
+            <span class="ghost-text lang-en">Hi, I'm Grzegorz Dróżdż</span>
+            <span class="ghost-text lang-pl">Cześć, jestem Grzegorz Dróżdż</span>
+            <span id="typed-main" class="typed-wrapper"></span>
+        </h1>
+
+        <h3 class="masthead-subheading mb-4" style="color:#eee;">
+            <span class="ghost-text lang-en">Bachelor of Computer Science · Data Science Enthusiast</span>
+            <span class="ghost-text lang-pl">licencjat Informatyki · Entuzjasta Data Science</span>
+            <span id="typed-sub" class="typed-wrapper"></span>
+        </h3>
+
+        <br>
+        <div class="d-flex flex-column align-items-center gap-3 mt-4">
+            <a class="btn btn-primary btn-xl text-uppercase" href="#profile" style="min-width: 280px;">
+                <span class="lang-en">Explore Portfolio</span>
+                <span class="lang-pl">Przeglądaj portfolio</span>
+            </a>
+            <button class="btn btn-outline-light btn-xl text-uppercase toggle-lang-btn" onclick="toggleLang()" style="min-width: 280px;">
+                <span class="lang-en"><img src="https://flagcdn.com/w20/pl.png" width="20" alt="PL" class="me-2"> Zmień na Polski</span>
+                <span class="lang-pl"><img src="https://flagcdn.com/w20/gb.png" width="20" alt="EN" class="me-2"> Switch to English</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="page-section" id="profile">
+    <div class="container">
+        <div class="text-center profile-header">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Personal Profile</span>
+                <span class="lang-pl">Profil Osobisty</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">Learn more about me</span>
+                <span class="lang-pl">Dowiedz się więcej o mnie</span>
+            </h3>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-10">
+                <div class="profile-content">
+
+                    <div class="profile-card aboutme-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user bigger-icon"></i>
+                        </div>
+                        <h4 class="card-title">
+                            <span class="lang-en">About Me</span>
+                            <span class="lang-pl">O mnie</span>
+                        </h4>
+
+                        <div class="lang-en">
+                            <p>I am studying <strong>Computer Science</strong> and developing my skills in <strong>Data Science</strong> and <strong>Machine Learning</strong>, while maintaining a broad range of technical competencies. In addition to building models, I focus on solid foundations, am proficient in <strong>databases (SQL)</strong>, and have had the opportunity to experience firsthand how an <strong>ERP system</strong> and <strong>IT structure</strong> function within a large corporation.</p>
+                            <p>I create my projects with their <strong>practical application</strong> in mind, ensuring they deliver <strong>real value</strong> based on <strong>data analysis</strong>. I am looking for challenges that will allow me to fully utilize my knowledge and <strong>analytical approach</strong> to solving complex problems within a <strong>professional team</strong>.</p>
+                        </div>
+                        <div class="lang-pl">
+                            <p>Studiuję <strong>informatykę</strong> i rozwijam się w kierunku <strong>Data Science</strong> oraz <strong>Machine Learning</strong>, dbając przy tym o szerokie kompetencje techniczne. Oprócz budowania modeli, stawiam na solidne podstawy, sprawnie poruszam się w tematyce <strong>baz danych (SQL)</strong> i miałem okazję poznać od środka, jak funkcjonuje <strong>system ERP</strong> oraz <strong>struktura IT</strong> w dużej korporacji.</p>
+                            <p>Swoje projekty tworzę z myślą o ich <strong>praktycznym zastosowaniu</strong>, tak aby dostarczały <strong>realną wartość</strong> na podstawie <strong>analizy danych</strong>. Szukam wyzwań, które pozwolą mi w pełni wykorzystać moją wiedzę i <strong>analityczne podejście</strong> do rozwiązywania złożonych problemów w <strong>profesjonalnym zespole</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="learn-more-section">
+                        <div class="nav-intro">
+                            <span class="lang-en">Learn more about my:</span>
+                            <span class="lang-pl">Dowiedz się więcej o:</span>
+                        </div>
+                        <div class="nav-buttons">
+                            <a class="profile-nav-btn" href="#education"><i class="fas fa-graduation-cap"></i> <span class="lang-en">Education</span><span class="lang-pl">Wykształcenie</span></a>
+                            <a class="profile-nav-btn" href="#skills"><i class="fas fa-tools"></i> <span class="lang-en">Skills</span><span class="lang-pl">Umiejętności</span></a>
+                            <a class="profile-nav-btn" href="#projects"><i class="fas fa-code-branch"></i> <span class="lang-en">Projects</span><span class="lang-pl">Projekty</span></a>
+                            <a class="profile-nav-btn" href="#experience"><i class="fas fa-briefcase"></i> <span class="lang-en">Experience</span><span class="lang-pl">Doświadczenie</span></a>
+                            <a class="profile-nav-btn" href="#certifications"><i class="fas fa-certificate"></i> <span class="lang-en">Certifications</span><span class="lang-pl">Certyfikaty</span></a>
+                            <a class="profile-nav-btn" href="#contact"><i class="fas fa-envelope"></i> <span class="lang-en">Contact</span><span class="lang-pl">Kontakt</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="education">
+    <div class="container">
+        <div class="text-center profile-header">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Education</span>
+                <span class="lang-pl">Wykształcenie</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">Learn more about my academic background</span>
+                <span class="lang-pl">Sprawdź przebieg mojej edukacji akademickiej</span>
+            </h3>
+        </div>
+
+        <div class="education-section">
+            <div class="education-item">
+                <div class="degree-header">
+                    <div class="degree-info">
+                        <h3>
+                            <span class="lang-en">Master of Science in Computer Science</span>
+                            <span class="lang-pl">Magister Informatyki</span>
+                        </h3>
+                        <div class="university">
+                            <span class="lang-en">University of Economics in Katowice</span>
+                            <span class="lang-pl">Uniwersytet Ekonomiczny w Katowicach</span>
+                        </div>
+                        <div class="specialization">
+                            <span class="lang-en">Specialization: Artificial Intelligence Programming</span>
+                            <span class="lang-pl">Specjalność: Programowanie Sztucznej Inteligencji</span>
+                        </div>
+                    </div>
+                    <div class="period">2025 - 2027</div>
+                </div>
+                <div class="status-badge in-progress">
+                    <i class="fas fa-clock"></i>
+                    <span class="lang-en">In Progress</span>
+                    <span class="lang-pl">W trakcie</span>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree-header">
+                    <div class="degree-info">
+                        <h3>
+                            <span class="lang-en">Bachelor of Science in Computer Science</span>
+                            <span class="lang-pl">Licencjat Informatyki</span>
+                        </h3>
+                        <div class="university">
+                            <span class="lang-en">University of Economics in Katowice</span>
+                            <span class="lang-pl">Uniwersytet Ekonomiczny w Katowicach</span>
+                        </div>
+                        <div class="specialization">
+                            <span class="lang-en">Specialization: Algorithms & Programming</span>
+                            <span class="lang-pl">Specjalność: Algorytmika i Programowanie</span>
+                        </div>
+                    </div>
+                    <div class="period">2022 - 2025</div>
+                </div>
+                <div class="thesis">
+                    <div class="thesis-label">
+                        <span class="lang-en">Bachelor's Thesis</span>
+                        <span class="lang-pl">Praca dyplomowa licencjacka</span>
+                    </div>
+                    <div class="thesis-title">
+                        <span class="lang-en">"Web application supporting the diagnosis of heart disease using machine learning methods"</span>
+                        <span class="lang-pl">"Aplikacja webowa wspomagająca diagnostykę chorób serca z zastosowaniem metod uczenia maszynowego"</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light" id="skills">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Skills</span>
+                <span class="lang-pl">Umiejętności</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">A structured overview of my current capabilities</span>
+                <span class="lang-pl">Uporządkowany przegląd moich kompetencji technicznych</span>
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fab fa-python fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Python</h4>
+                <p class="text-body text-center lang-en">
+                    I have strong proficiency in Python, including data processing, backend development, and process automation. I design and develop efficient APIs using <strong>FastAPI</strong> and build interactive applications with <strong>Streamlit</strong>. I effectively leverage <strong>Pandas</strong> and <strong>NumPy</strong> for advanced data analysis and transformation. </p>
+                <p class="text-body text-center lang-pl">
+                    Posiadam wysokie kompetencje w zakresie języka Python, obejmujące m.in. przetwarzanie danych, rozwój backendu oraz automatyzację procesów. Projektuję i rozwijam wydajne API z wykorzystaniem <strong>FastAPI</strong> oraz buduję interaktywne aplikacje w <strong>Streamlit</strong>. Sprawnie wykorzystuję biblioteki <strong>Pandas</strong> i <strong>NumPy</strong> do zaawansowanej analizy i transformacji danych. </p>
+            </div>
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Data Science & ML</h4>
+                <p class="text-body text-center lang-en">
+                    I have hands-on experience in the entire ML lifecycle – from data <strong>preprocessing</strong>, through <strong>EDA</strong> and <strong>feature engineering</strong>, to training models using <strong>scikit-learn</strong>. I create clear visualizations (<strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Plotly</strong>) and ensure model interpretability using Explainable AI techniques like <strong>SHAP</strong>.
+                </p>
+                <p class="text-body text-center lang-pl">
+                    Posiadam doświadczenie w całym cyklu tworzenia rozwiązań ML – od <strong>preprocessingu</strong> surowych danych, przez <strong>EDA</strong> i <strong>inżynierię cech</strong>, aż po trenowanie modeli w <strong>scikit-learn</strong>. Tworzę czytelne wizualizacje (<strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Plotly</strong>) oraz dbam o interpretowalność wyników z wykorzystaniem technik Explainable AI, takich jak <strong>SHAP</strong>.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">SQL</h4>
+                <p class="text-body text-center lang-en">
+                    I have knowledge in working with relational databases (MS SQL Server), including querying, data manipulation, and database management. I am comfortable using <strong>DDL</strong> and <strong>DML</strong> commands, writing complex queries, and managing database schemas and structures.
+                </p>
+                <p class="text-body text-center lang-pl">
+                    Dysponuję wiedzą w zakresie pracy z relacyjnymi bazami danych (MS SQL Server), obejmującą tworzenie zapytań, modyfikację danych oraz zarządzanie strukturą bazy. Swobodnie posługuję się poleceniami <strong>DDL</strong> i <strong>DML</strong>, tworzę złożone zapytania oraz efektywnie zarządzam schematami i strukturą danych.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">C# & OOP</h4>
+                <p class="text-body text-center lang-en">
+                    Solid understanding of core Object-Oriented Programming (OOP) principles. Capable of writing foundational C# code for basic applications and academic projects.
+                </p>
+                <p class="text-body text-center lang-pl">
+                    Solidne zrozumienie głównych zasad programowania obiektowego (OOP). Potrafię pisać podstawowy kod w C# na potrzeby mniejszych aplikacji i projektów akademickich.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Web Development</h4>
+                <p class="text-body text-center lang-en">
+                    Practical ability to create and deploy responsive websites (like this portfolio) using <strong>HTML</strong>, <strong>CSS</strong>, and frameworks like <strong>Bootstrap</strong>.
+                </p>
+                <p class="text-body text-center lang-pl">
+                    Praktyczna umiejętność tworzenia i wdrażania responsywnych stron internetowych (takich jak to portfolio) przy użyciu <strong>HTML</strong>, <strong>CSS</strong> oraz frameworka <strong>Bootstrap</strong>.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center mb-4">
+                <span class="fa-stack fa-4x mb-3">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">
+                    <span class="lang-en">English Proficiency</span>
+                    <span class="lang-pl">Znajomość j. angielskiego</span>
+                </h4>
+                <p class="text-body text-center lang-en">
+                    Advanced level (B2/C1). Fully comfortable reading technical documentation and communicating effectively in international work environments.
+                </p>
+                <p class="text-body text-center lang-pl">
+                    Poziom zaawansowany (B2/C1). Swobodnie czytam dokumentację techniczną i potrafię płynnie komunikować się w międzynarodowym środowisku.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="page-section text-dark" id="projects" style="background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Projects</span>
+                <span class="lang-pl">Projekty</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">Some of the work I've done recently</span>
+                <span class="lang-pl">Wybrane projekty, nad którymi ostatnio pracowałem</span>
+            </h3>
+        </div>
+        <div class="row">
+
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card project-card w-100 shadow-sm">
+                    <img class="card-img-top" src="assets/img/cardiopredict/cardiopredict.PNG" alt="CardioPredict App" style="object-fit: cover; height: clamp(200px, 30vw, 300px); width: 100%;" />
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-dark bg-danger mb-2 text-wrap">
+                            <span class="lang-en">Binary Classification with Explainable AI & Web App</span>
+                            <span class="lang-pl">Klasyfikacja Binarna z Wyjaśnialnym AI (XAI) i Aplikacją Webową</span>
+                        </span>
+                        <h5 class="card-title">❤️ CardioPredict</h5>
+                        <p class="card-text flex-fill lang-en">
+                            An advanced web application that predicts cardiovascular disease risk using machine learning. Integrated with Explainable AI (SHAP) to provide clear insights into the specific medical parameters that influenced each prediction.
+                        <p class="card-text flex-fill lang-pl">
+                            Zaawansowana aplikacja webowa przewidująca ryzyko chorób układu krążenia przy użyciu uczenia maszynowego. Dzięki integracji Explainable AI (SHAP), system wskazuje kluczowe parametry medyczne, które miały decydujący wpływ na wygenerowaną diagnozę.
+                        </p>
+                        <a href="#cardioPredictModal" class="btn btn-primary btn-lg w-100 mt-auto" data-bs-toggle="modal">
+                            🔍 <span class="lang-en">Full Preview</span><span class="lang-pl">Pełny Podgląd</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card project-card w-100 shadow-sm">
+                    <img class="card-img-top" src="assets/img/project_segmentation.jpg" alt="Credit Card Customer Segmentation" style="object-fit: cover; height: clamp(200px, 30vw, 300px); width: 100%;" />
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-info text-dark mb-2 text-wrap">
+                            <span class="lang-en">Unsupervised Learning with K-Means & Pipeline</span>
+                            <span class="lang-pl">Uczenie Nienadzorowane (K-Means) i Pipeline</span>
+                        </span>
+                        <h5 class="card-title">
+                            <span class="lang-en">💳 Credit Card Customer Segmentation</span>
+                            <span class="lang-pl">💳 Segmentacja Klientów Kart Kredytowych</span>
+                        </h5>
+                        <p class="card-text flex-fill lang-en">
+                            Analyzing financial behavior to identify distinct customer personas for targeted marketing and risk assessment. Leverages PCA and advanced preprocessing to transform thousands of raw transactions into actionable business profiles.
+                        </p>
+                        <p class="card-text flex-fill lang-pl">
+                            Analiza zachowań finansowych w celu identyfikacji profili klientów dla celów marketingowych i oceny ryzyka. Projekt wykorzystuje redukcję wymiarowości (PCA) oraz zaawansowany preprocessing, aby przekształcić tysiące surowych transakcji w czytelne profile biznesowe.
+                        </p>
+                        <a href="#kmeansModal" class="btn btn-primary btn-lg w-100 mt-auto" data-bs-toggle="modal">
+                            🔍 <span class="lang-en">Full Preview</span><span class="lang-pl">Pełny Podgląd</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card project-card w-100 shadow-sm">
+                    <img class="card-img-top" src="assets/img/project_licence_plate.png" alt="Automatic Number Plate Recognition" style="object-fit: cover; height: clamp(200px, 30vw, 300px); width: 100%;" />
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 text-wrap">
+                            <span class="lang-en">Computer Vision with YOLOv8 & Real-time OCR</span>
+                            <span class="lang-pl">Computer Vision z modelem YOLOv8 i czytnikiem OCR</span>
+                        </span>
+                        <h5 class="card-title">
+                            <span class="lang-en">🚗 Automatic Number Plate Recognition (ANPR)</span>
+                            <span class="lang-pl">🚗 Automatyczne Rozpoznawanie Tablic (ANPR)</span>
+                        </h5>
+                        <p class="card-text flex-fill lang-en">
+                            A comprehensive access control system using YOLOv8 for plate detection and FastALPR for character recognition. It simulates a real-time parking barrier, offering automated vehicle verification against an authorized database.
+                        </p>
+                        <p class="card-text flex-fill lang-pl">
+                            Kompleksowy system kontroli dostępowej wykorzystujący YOLOv8 do wykrywania tablic oraz FastALPR do rozpoznawania znaków. Projekt symuluje pracę szlabanu parkingowego, oferując wysoką precyzję odczytu oraz weryfikację pojazdów na podstawie bazy danych.
+                        </p>
+                        <a href="#cvModal" class="btn btn-primary btn-lg w-100 mt-auto" data-bs-toggle="modal">
+                            🔍 <span class="lang-en">Full Preview</span><span class="lang-pl">Pełny Podgląd</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center" style="font-size: 1.3rem;">
+                    <p class="text-body">
+                        <span class="lang-en">Check out more of my projects on GitHub:</span>
+                        <span class="lang-pl">Więcej moich projektów znajdziesz na GitHub:</span>
+                    </p>
+                    <a href="https://github.com/GrzegorzDrozdz" target="_blank" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="cardioPredictModal" tabindex="-1" aria-labelledby="cardioPredictModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="cardioPredictModalLabel" class="modal-title">
+                    <span class="lang-en">🩺 CardioPredict – Heart Disease Risk Assessment System</span>
+                    <span class="lang-pl">🩺 CardioPredict – System Oceny Ryzyka Chorób Serca</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-center p-4 bg-light rounded mb-4 border">
+                    <p class="fs-5 mb-2 text-center text-muted">
+                        <span class="lang-en">🎥 Watch the full presentation of the interface and key features on YouTube.</span>
+                        <span class="lang-pl">🎥 Obejrzyj pełną prezentację interfejsu i kluczowych funkcji na YouTube.</span>
+                    </p>
+                    <a href="https://youtu.be/BI8z01Uph1U" target="_blank" class="btn btn-danger btn-lg shadow-sm">
+                        <i class="fab fa-youtube me-2"></i>
+                        <span class="lang-en">Watch on YouTube</span>
+                        <span class="lang-pl">Obejrzyj na YouTube</span>
+                    </a>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-lg-12">
+                        <p class="lead lang-en">
+                            <strong>CardioPredict</strong> is an end-to-end Machine Learning solution (developed as a Bachelor's Thesis) designed to predict the risk of cardiovascular diseases based on clinical data.
+                            Prioritizing transparency, it integrates an <strong>Explainable AI (XAI)</strong> interface built in <strong>Streamlit</strong>, moving away from standard "black-box" models so doctors can understand <em>why</em> a specific risk score was predicted.
+                        </p>
+                        <p class="lead lang-pl">
+                            <strong>CardioPredict</strong> to kompleksowe rozwiązanie Machine Learning (stworzone w ramach pracy licencjackiej) przeznaczone do przewidywania ryzyka chorób sercowo-naczyniowych na podstawie danych klinicznych.
+                            Kładąc nacisk na przejrzystość, integruje interfejs <strong>Wyjaśnialnej Sztucznej Inteligencji (XAI)</strong> w <strong>Streamlit</strong>, odchodząc od standardowych modeli typu "czarna skrzynka", aby lekarze mogli zrozumieć, <em>dlaczego</em> wygenerowano dany wynik.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h5 class="mb-4">
+                    <i class="fas fa-laptop-medical text-primary me-2"></i>
+                    <span class="lang-en">Machine Learning Workflow</span>
+                    <span class="lang-pl">Przepływ Pracy Uczenia Maszynowego</span>
+                </h5>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">1. Advanced Preprocessing</span>
+                                <span class="lang-pl">1. Zaawansowane Przetwarzanie</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Building pipelines using scikit-learn.</span>
+                                <span class="lang-pl">Budowa rurociągów (pipelines) w scikit-learn.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>RobustScaler:</strong> Used for numerical features to handle medical outliers effectively.</li>
+                                <li><strong>Encoding:</strong> One-Hot Encoding applied to categorical features.</li>
+                                <li><strong>Imputation:</strong> Handling missing values to ensure data integrity.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>RobustScaler:</strong> Skalowanie cech numerycznych w sposób odporny na medyczne wartości odstające.</li>
+                                <li><strong>Kodowanie:</strong> One-Hot Encoding zastosowane do zmiennych kategorycznych.</li>
+                                <li><strong>Imputacja:</strong> Obsługa braków danych w celu zapewnienia spójności.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">2. Model Training & Tuning</span>
+                                <span class="lang-pl">2. Trenowanie i Strojenie Modeli</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Finding the best predictor.</span>
+                                <span class="lang-pl">Znalezienie najlepszego predyktora.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li>Tested classifiers: <strong>Logistic Regression, decision tree, SVM, KNN, Random Forest</strong>.</li>
+                                <li>Applied ensembles (<strong>Voting & Stacking</strong>) and optimized with GridSearchCV.</li>
+                                <li>Cross-validation evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li>Przetestowano klasyfikatory: <strong>Regresja Logistyczna, drzewo decyzyjne, SVM, KNN, Lasy Losowe</strong>.</li>
+                                <li>Zastosowano metody zespołowe (<strong>Voting i Stacking</strong>) oraz optymalizację GridSearchCV.</li>
+                                <li>Walidacja krzyżowa oceniana za pomocą Dokładności, Precyzji, Czułości, F1-score i ROC-AUC.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">3. Explainable AI (SHAP)</span>
+                                <span class="lang-pl">3. Wyjaśnialne AI (SHAP)</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Opening the "Black Box".</span>
+                                <span class="lang-pl">Otwarcie algorytmicznej "czarnej skrzynki".</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Global insights:</strong> Analyzed using Summary, Beeswarm, and Dependence Plots.</li>
+                                <li><strong>Local insights:</strong> Explained individual decisions with Force, Waterfall, and Decision Plots.</li>
+                                <li>Provides complete feature importance and interpretability.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Analiza globalna:</strong> Wykorzystanie wykresów Summary, Beeswarm i Dependence.</li>
+                                <li><strong>Analiza lokalna:</strong> Wyjaśnianie pojedynczych decyzji wykresami Force, Waterfall i Decision.</li>
+                                <li>Zapewnia pełną ważność cech i interpretowalność wyników.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">4. Streamlit Web App</span>
+                                <span class="lang-pl">4. Aplikacja Webowa Streamlit</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Interactive dashboard for users.</span>
+                                <span class="lang-pl">Interaktywny pulpit dla użytkowników.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Single Prediction:</strong> Input individual parameters and receive risk assessment with SHAP.</li>
+                                <li><strong>Batch Prediction:</strong> Upload CSV & Excel files for mass-diagnosis and download results.</li>
+                                <li><strong>Visualizations:</strong> Compare inputs with population data using histograms, boxplots, pie and radar charts.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Pojedyncza Predykcja:</strong> Wprowadź parametry pacjenta i otrzymaj wynik ze wsparciem SHAP.</li>
+                                <li><strong>Przetwarzanie Wsadowe:</strong> Przesyłaj pliki CSV i Excel do masowej diagnozy i pobieraj wyniki.</li>
+                                <li><strong>Wizualizacje:</strong> Porównuj dane z populacją za pomocą histogramów, wykresów pudełkowych, kołowych i radarowych.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mb-4">
+                    <i class="fas fa-heartbeat text-danger me-2"></i>
+                    <span class="lang-en">Key Application Features</span>
+                    <span class="lang-pl">Kluczowe Funkcje Aplikacji</span>
+                </h5>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-danger shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">Single & Batch Prediction</span>
+                                    <span class="lang-pl">Pojedyncza i Wsadowa Predykcja</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Assess individual patients instantly or upload bulk CSV/Excel files to process entire datasets at once.</p>
+                                <p class="small text-muted mb-0 lang-pl">Diagnozuj pojedynczych pacjentów natychmiast lub przesyłaj pliki CSV/Excel, aby przetworzyć całe zbiory danych.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-info shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">Interactive Visualizations</span>
+                                    <span class="lang-pl">Interaktywne Wizualizacje</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Dynamically generated plots (histograms, boxplots, radar charts) allowing comparison against global population data.</p>
+                                <p class="small text-muted mb-0 lang-pl">Dynamicznie generowane wykresy (histogramy, radarowe, pudełkowe) pozwalające na porównanie pacjenta z normami populacyjnymi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-success shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">Model Interpretability</span>
+                                    <span class="lang-pl">Interpretowalność Modelu</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Built-in SHAP Explainer provides deep understanding of predictions through local and global visualizations.</p>
+                                <p class="small text-muted mb-0 lang-pl">Wbudowany system SHAP zapewnia głębokie zrozumienie diagnozy poprzez lokalne i globalne wizualizacje.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-dark mt-5" role="alert">
+                    <div class="d-flex align-items-center">
+                        <div class="h2 me-3 mb-0"><i class="fas fa-cogs"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">
+                                <span class="lang-en">Production Pipeline</span>
+                                <span class="lang-pl">Przebieg Pracy Systemu</span>
+                            </h6>
+                            <p class="mb-0 small font-monospace">
+                                Raw Data → Preprocessing Pipeline → Trained Model → SHAP Explainer → Streamlit Dashboard
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center">
+                    <a href="https://github.com/GrzegorzDrozdz/CardioPredict" target="_blank" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-github me-2"></i> <span class="lang-en">GitHub Repo</span><span class="lang-pl">Repozytorium GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="d-flex justify-content-center pb-4">
+                <button type="button" class="btn btn-primary btn-xl text-uppercase px-5" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark me-2"></i> <span class="lang-en">Close Project</span><span class="lang-pl">Zamknij Projekt</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="kmeansModal" tabindex="-1" aria-labelledby="kmeansModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="kmeansModalLabel" class="modal-title">
+                    <span class="lang-en">💳 Credit Card Customer Segmentation</span>
+                    <span class="lang-pl">💳 Segmentacja Klientów Kart Kredytowych</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row mb-4 mt-3">
+                    <div class="col-lg-12">
+                        <p class="lead lang-en">
+                            This project utilizes <strong>Unsupervised Machine Learning</strong> techniques to analyze the financial behaviors of ~9,000 active credit card holders.
+                            By applying the <strong>K-Means</strong> algorithm (k=5), the model segments customers into distinct profiles to facilitate targeted marketing strategies and risk assessment.
+                        </p>
+                        <p class="lead lang-pl">
+                            Ten projekt wykorzystuje techniki <strong>Uczenia Nienadzorowanego</strong> do analizy zachowań finansowych około 9000 aktywnych posiadaczy kart kredytowych.
+                            Przy użyciu algorytmu <strong>K-Means</strong> (k=5), podzieliłem bazę na odrębne profile ułatwiające optymalizację kampanii marketingowych oraz ocenę ryzyka.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h5 class="mb-4">
+                    <i class="fas fa-cogs text-primary me-2"></i>
+                    <span class="lang-en">Methodology & Workflow</span>
+                    <span class="lang-pl">Metodologia i Etapy Pracy</span>
+                </h5>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">1. Exploratory Data Analysis (EDA)</span>
+                                <span class="lang-pl">1. Eksploracyjna Analiza Danych (EDA)</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Understanding the raw data structure.</span>
+                                <span class="lang-pl">Zrozumienie struktury surowych danych.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li>Analyzed distributions using histograms and boxplots.</li>
+                                <li>Identified <strong>heavy right-skewness</strong> and outliers typical for financial data.</li>
+                                <li>Investigated correlations between specific financial features (e.g., Purchases vs. One-Off Purchases).</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li>Analiza rozkładów przy użyciu histogramów i wykresów pudełkowych.</li>
+                                <li>Zidentyfikowano <strong>silną prawoskośność</strong> i wartości odstające typowe dla danych finansowych.</li>
+                                <li>Zbadano korelację między poszczególnymi atrybutami (np. zakupy całkowite a jednorazowe).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">2. Advanced Preprocessing</span>
+                                <span class="lang-pl">2. Zaawansowane Przetwarzanie</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Preparing data for distance-based algorithms.</span>
+                                <span class="lang-pl">Przygotowanie dla algorytmów opartych na odległości.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Imputation:</strong> Handled missing values in <code>MINIMUM_PAYMENTS</code> and <code>CREDIT_LIMIT</code>.</li>
+                                <li><strong>Yeo-Johnson Transform:</strong> <span class="badge bg-warning text-dark">Crucial Step</span> Applied Power Transformer to stabilize variance. This significantly improved clustering performance over standard scaling.</li>
+                                <li><strong>Scaling:</strong> Final normalization using <code>StandardScaler</code>.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Imputacja:</strong> Uzupełniono braki danych w kolumnach minimalnych płatności oraz limitów.</li>
+                                <li><strong>Transformacja Yeo-Johnsona:</strong> <span class="badge bg-warning text-dark">Kluczowy Krok</span> Zastosowano transformację potęgową do stabilizacji wariancji. Poprawiło to jakość klastrowania znacznie skuteczniej niż samo skalowanie.</li>
+                                <li><strong>Skalowanie:</strong> Ostateczna normalizacja przy użyciu <code>StandardScaler</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">3. Dimensionality Reduction (PCA)</span>
+                                <span class="lang-pl">3. Redukcja Wymiarowości (PCA)</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Reducing noise and complexity.</span>
+                                <span class="lang-pl">Zmniejszenie złożoności zbioru danych.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li>Utilized <strong>Principal Component Analysis (PCA)</strong>.</li>
+                                <li>Effectively reduced noise and multicollinearity.</li>
+                                <li>Compressed the feature space while retaining the vast majority of data variance.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li>Wykorzystano technikę <strong>PCA (Analiza Głównych Składowych)</strong>.</li>
+                                <li>Skutecznie zredukowano szum i współliniowość zmiennych.</li>
+                                <li>Skompresowano przestrzeń cech, zachowując przy tym zdecydowaną większość wariancji danych.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">4. Algorithm Selection</span>
+                                <span class="lang-pl">4. Wybór Algorytmu</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Why K-Means over others?</span>
+                                <span class="lang-pl">Dlaczego wybrano K-Means?</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Hierarchical:</strong> Used dendrograms to estimate the natural number of clusters.</li>
+                                <li><strong>DBSCAN (Rejected):</strong> Classified high-spending clients as "noise", which is undesirable for VIP business profiles.</li>
+                                <li><strong>K-Means (Selected):</strong> The optimal number of clusters (k=5) was determined using the Elbow Method and Silhouette Score.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Dendrogram:</strong> Użyte pomocniczo przy estymacji naturalnej liczby skupień.</li>
+                                <li><strong>DBSCAN (Odrzucony):</strong> Algorytm potraktował klientów o najwyższych wydatkach jako "szum", co dla profili VIP jest błędem biznesowym.</li>
+                                <li><strong>K-Means (Wybrany):</strong> Ostatecznie wybrano k=5 po zastosowaniu metody łokcia i metryki Silhouette.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <div>
+                    <h5 class="mb-4">
+                        <i class="fas fa-users text-success me-2"></i>
+                        <span class="lang-en">Identified Customer Personas</span>
+                        <span class="lang-pl">Identyfikacja Segmentów Klientów</span>
+                    </h5>
+
+                    <div class="row justify-content-center g-3">
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-start border-4 border-secondary shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="assets/img/cluster_0_radar_plot.png" class="img-fluid mb-3" alt="Cluster 0" style="max-height: 250px;">
+                                    <h6 class="fw-bold">
+                                        <span class="lang-en">0. Occasional Users</span>
+                                        <span class="lang-pl">0. Użytkownicy Okazjonalni</span>
+                                    </h6>
+                                    <p class="small text-muted mb-0 lang-en">Low balance and spending activity. Passive customers who rarely use the card, mostly for single transactions.</p>
+                                    <p class="small text-muted mb-0 lang-pl">Niskie saldo i śladowa aktywność. Pasywni klienci, którzy rzadko używają karty (głównie pojedyncze transakcje).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-start border-4 border-warning shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="assets/img/cluster_1_radar_plot.png" class="img-fluid mb-3" alt="Cluster 1" style="max-height: 250px;">
+                                    <h6 class="fw-bold">
+                                        <span class="lang-en">1. VIP / Prime</span>
+                                        <span class="lang-pl">1. Klienci Premium (VIP)</span>
+                                    </h6>
+                                    <p class="small text-muted mb-0 lang-en">The most valuable segment. Highest purchase turnover, high credit limits, and good repayment habits.</p>
+                                    <p class="small text-muted mb-0 lang-pl">Najbardziej wartościowy segment. Najwyższy obrót z zakupów, wysokie limity i terminowe spłaty zadłużenia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 border-start border-4 border-success shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="assets/img/cluster_2_radar_plot.png" class="img-fluid mb-3" alt="Cluster 2" style="max-height: 250px;">
+                                    <h6 class="fw-bold">
+                                        <span class="lang-en">2. Cash Only</span>
+                                        <span class="lang-pl">2. Klienci Gotówkowi</span>
+                                    </h6>
+                                    <p class="small text-muted mb-0 lang-en">Do not use the card for retail purchases, relying exclusively on cash advances (ATM).</p>
+                                    <p class="small text-muted mb-0 lang-pl">Nie używają karty do transakcji detalicznych, polegają wyłącznie na wypłatach gotówkowych z bankomatów.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-start border-4 border-info shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="assets/img/cluster_3_radar_plot.png" class="img-fluid mb-3" alt="Cluster 3" style="max-height: 250px;">
+                                    <h6 class="fw-bold">
+                                        <span class="lang-en">3. Low-Debt Installment</span>
+                                        <span class="lang-pl">3. Niskodłużni Klienci Ratalni</span>
+                                    </h6>
+                                    <p class="small text-muted mb-0 lang-en">Customers with the lowest debt levels, utilizing the card purposefully for installment purchases.</p>
+                                    <p class="small text-muted mb-0 lang-pl">Klienci o najniższym poziomie zadłużenia. Strategiczne wykorzystanie karty do celowych zakupów ratalnych.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-start border-4 border-danger shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="assets/img/cluster_4_radar_plot.png" class="img-fluid mb-3" alt="Cluster 4" style="max-height: 250px;">
+                                    <h6 class="fw-bold">
+                                        <span class="lang-en">4. High-Risk Revolvers</span>
+                                        <span class="lang-pl">4. Klienci Wysokiego Ryzyka</span>
+                                    </h6>
+                                    <p class="small text-muted mb-0 lang-en">The most indebted group. Heavy spending and cash advances, rarely paying off the full balance.</p>
+                                    <p class="small text-muted mb-0 lang-pl">Najbardziej zadłużona grupa. Wysokie wydatki i wypłaty z bankomatów, bardzo rzadko spłacają pełne saldo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="alert alert-dark mt-5" role="alert">
+                    <div class="d-flex align-items-center">
+                        <div class="h2 me-3 mb-0"><i class="fas fa-microchip"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">
+                                <span class="lang-en">Production Pipeline & Inference</span>
+                                <span class="lang-pl">Środowisko Produkcyjne</span>
+                            </h6>
+                            <p class="mb-0 small font-monospace text-break">
+                                Input Data → Imputer → PowerTransformer (Yeo-Johnson) → StandardScaler → PCA → K-Means Model
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center">
+                    <a href="https://github.com/GrzegorzDrozdz/credit-card-user-segmentation" target="_blank" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-github me-2"></i> <span class="lang-en">GitHub Repo</span><span class="lang-pl">Repozytorium GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="d-flex justify-content-center pb-4">
+                <button type="button" class="btn btn-primary btn-xl text-uppercase px-5" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark me-2"></i> <span class="lang-en">Close Project</span><span class="lang-pl">Zamknij Projekt</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="cvModalLabel" class="modal-title">
+                    <span class="lang-en">🚗 ANPR – Automatic Number Plate Recognition</span>
+                    <span class="lang-pl">🚗 ANPR – System Automatycznego Rozpoznawania Tablic</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row mb-4 mt-3">
+                    <div class="col-lg-12">
+                        <p class="lead lang-en">
+                            A high-performance License Plate Recognition system designed for automated access control.
+                            It combines a custom-trained <strong>YOLOv8</strong> object detector with <strong>FastALPR</strong> for Optical Character Recognition (OCR), achieving an impressive <strong>98% accuracy</strong> on Polish license plates.
+                        </p>
+                        <p class="lead lang-pl">
+                            Wysokowydajny system rozpoznawania tablic rejestracyjnych zaprojektowany do automatycznej kontroli dostępu.
+                            Łączy autorski model detekcji <strong>YOLOv8</strong> z technologią <strong>FastALPR</strong> do rozpoznawania znaków (OCR), osiągając imponującą <strong>skuteczność 98%</strong> na polskich tablicach rejestracyjnych.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h5 class="mb-4">
+                    <i class="fas fa-microchip text-primary me-2"></i>
+                    <span class="lang-en">System Pipeline & Workflow</span>
+                    <span class="lang-pl">Przepływ Pracy i Logika Systemu</span>
+                </h5>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">1. Object Detection (YOLOv8)</span>
+                                <span class="lang-pl">1. Detekcja Obiektów (YOLOv8)</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Locating the license plate in the frame.</span>
+                                <span class="lang-pl">Lokalizacja tablicy rejestracyjnej na klatce.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Custom Weights:</strong> Utilizes a YOLOv8 model (`best.pt`) trained specifically on Polish license plates.</li>
+                                <li><strong>ROI Extraction:</strong> Crops the Region of Interest with adaptive padding to ensure full character visibility.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Autorskie Wagi:</strong> Wykorzystuje model YOLOv8 (`best.pt`) wytrenowany specjalnie na polskich tablicach.</li>
+                                <li><strong>Ekstrakcja ROI:</strong> Wycinanie obszaru zainteresowania z adaptacyjnym marginesem, aby zapewnić pełną widoczność znaków.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">2. High-Precision OCR</span>
+                                <span class="lang-pl">2. Wysokoprecyzyjny OCR</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Reading text from the cropped image.</span>
+                                <span class="lang-pl">Odczytywanie tekstu z wyciętego obrazu.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>FastALPR:</strong> Implements an advanced OCR solution based on LPRNet/ViT.</li>
+                                <li><strong>Performance:</strong> Significantly outperforms standard text-reading solutions like Tesseract or EasyOCR.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>FastALPR:</strong> Implementacja zaawansowanego rozwiązania OCR opartego na architekturze LPRNet/ViT.</li>
+                                <li><strong>Wydajność:</strong> Znacząco przewyższa standardowe narzędzia do czytania tekstu, takie jak Tesseract czy EasyOCR.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">3. Smart Access Logic</span>
+                                <span class="lang-pl">3. Logika Kontroli Dostępu</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Simulating a parking barrier.</span>
+                                <span class="lang-pl">Symulacja szlabanu parkingowego.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Text Cleaning:</strong> Filters output to purely alphanumeric characters.</li>
+                                <li><strong>Database Verification:</strong> Cross-references detected plates against an "Authorized Vehicles" whitelist.</li>
+                                <li><strong>Gate Simulation:</strong> Determines whether to open the virtual barrier based on authorization.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Czyszczenie Tekstu:</strong> Filtrowanie wyjścia do czysto alfanumerycznych znaków.</li>
+                                <li><strong>Weryfikacja Bazy:</strong> Porównywanie wykrytych tablic z "białą listą" uprawnionych pojazdów.</li>
+                                <li><strong>Symulacja Bramy:</strong> Podejmowanie decyzji o otwarciu wirtualnego szlabanu na podstawie autoryzacji.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-3 border rounded bg-light">
+                            <h6 class="text-primary fw-bold">
+                                <span class="lang-en">4. Video & UI Processing</span>
+                                <span class="lang-pl">4. Przetwarzanie Wideo i UI</span>
+                            </h6>
+                            <p class="small text-muted mb-2">
+                                <span class="lang-en">Real-time visual feedback.</span>
+                                <span class="lang-pl">Informacje zwrotne w czasie rzeczywistym.</span>
+                            </p>
+                            <ul class="small mb-0 lang-en">
+                                <li><strong>Stream Support:</strong> Configurable input for webcam (`0`) or pre-recorded video (`.mp4`).</li>
+                                <li><strong>Dynamic UI:</strong> Draws bounding boxes, reads, and visual status indicators (Green/Red) directly on the frame.</li>
+                                <li><strong>Optimization:</strong> Frame skipping logic ensures real-time processing capabilities.</li>
+                            </ul>
+                            <ul class="small mb-0 lang-pl">
+                                <li><strong>Obsługa Strumieni:</strong> Konfigurowalne wejście dla kamery (`0`) lub nagrania wideo (`.mp4`).</li>
+                                <li><strong>Dynamiczne UI:</strong> Rysowanie ramek, odczytów i statusów wizualnych (Zielony/Czerwony) bezpośrednio na klatce.</li>
+                                <li><strong>Optymalizacja:</strong> Logika pomijania klatek gwarantująca płynne przetwarzanie obrazu.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mb-4">
+                    <i class="fas fa-car-side text-success me-2"></i>
+                    <span class="lang-en">Key Application Features</span>
+                    <span class="lang-pl">Kluczowe Funkcje Aplikacji</span>
+                </h5>
+
+                <div class="row justify-content-center g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-success shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">98% Accuracy</span>
+                                    <span class="lang-pl">Skuteczność 98%</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Tested on a challenging dataset of 100 samples, combining custom YOLO weights with advanced FastALPR.</p>
+                                <p class="small text-muted mb-0 lang-pl">Przetestowane na trudnym zbiorze 100 próbek, łącząc autorskie wagi YOLO z zaawansowanym FastALPR.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-warning shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">Real-time Performance</span>
+                                    <span class="lang-pl">Czas Rzeczywisty</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Optimized pipeline capable of processing live webcam feeds and heavy video files without major lag.</p>
+                                <p class="small text-muted mb-0 lang-pl">Zoptymalizowany rurociąg pozwalający na analizę obrazu na żywo oraz plików wideo bez dużych opóźnień.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-4 border-info shadow-sm">
+                            <div class="card-body">
+                                <h6 class="fw-bold">
+                                    <span class="lang-en">Automated Whitelist</span>
+                                    <span class="lang-pl">Automatyczna Biała Lista</span>
+                                </h6>
+                                <p class="small text-muted mb-0 lang-en">Easily configurable array of authorized license plates integrated with visual UI status updates.</p>
+                                <p class="small text-muted mb-0 lang-pl">Łatwa do konfiguracji lista autoryzowanych tablic połączona z wizualnymi aktualizacjami statusu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-dark mt-5" role="alert">
+                    <div class="d-flex align-items-center">
+                        <div class="h2 me-3 mb-0"><i class="fas fa-project-diagram"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">
+                                <span class="lang-en">Execution Pipeline</span>
+                                <span class="lang-pl">Przebieg Pracy Systemu</span>
+                            </h6>
+                            <p class="mb-0 small font-monospace">
+                                Frame Capture → YOLOv8 Detection → ROI Cropping → FastALPR → Whitelist Verification → UI Update
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center">
+                    <a href="https://github.com/GrzegorzDrozdz/automatic-number-plate-recognition" target="_blank" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-github me-2"></i> <span class="lang-en">GitHub Repo</span><span class="lang-pl">Repozytorium GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="d-flex justify-content-center pb-4">
+                <button type="button" class="btn btn-primary btn-xl text-uppercase px-5" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark me-2"></i> <span class="lang-en">Close Project</span><span class="lang-pl">Zamknij Projekt</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="page-section bg-light" id="experience">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Work Experience</span>
+                <span class="lang-pl">Doświadczenie Zawodowe</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">My professional background</span>
+                <span class="lang-pl">Moja ścieżka kariery</span>
+            </h3>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item no-icon">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <img src="assets/img/page_img/arc_mit_logo.jpg" alt="ArcelorMittal Logo">
+                        <div class="timeline-meta">
+                            <h3>ArcelorMittal Poland</h3>
+                            <h4>
+                                <span class="lang-en">IT Intern</span>
+                                <span class="lang-pl">Praktykant IT</span>
+                            </h4>
+                            <h5>
+                                <span class="lang-en">July 2024 – January 2025</span>
+                                <span class="lang-pl">Lipiec 2024 – Styczeń 2025</span>
+                            </h5>
+                        </div>
+                    </div>
+                    <p class="text-muted small mb-3 lang-en">
+                        Completed a comprehensive 6-month internship rotating across three key IT departments:
+                    </p>
+                    <p class="text-muted small mb-3 lang-pl">
+                        Odbyłem kompleksowe, 6-miesięczne praktyki rotacyjne w trzech kluczowych działach IT:
+                    </p>
+                    <ul class="text-muted small mb-3 lang-en">
+                        <li><strong>Production Systems:</strong> Administered <strong>SAP ERP</strong> and <strong>MES</strong> systems. Developed <strong>SQL</strong> queries (MS SQL Server) for data reporting and process optimization.</li>
+                        <li><strong>Network Administration:</strong> Configured network devices using monitoring tools like <strong>Fortigate</strong>, gaining practical exposure to enterprise firewalls and routing protocols.</li>
+                        <li><strong>End-User Support:</strong> Provided technical support for hardware and software issues, configured workstations, and managed system backups.</li>
+                    </ul>
+                    <ul class="text-muted small mb-3 lang-pl">
+                        <li><strong>Systemy Produkcyjne:</strong> Administrowanie systemami <strong>SAP ERP</strong> oraz <strong>MES</strong>. Tworzenie zapytań <strong>SQL</strong> (MS SQL Server) na potrzeby raportowania danych i optymalizacji procesów.</li>
+                        <li><strong>Administracja Sieciami:</strong> Konfiguracja urządzeń sieciowych z wykorzystaniem platform takich jak <strong>Fortigate</strong>. Praktyczna praca z zaporami sieciowymi (firewall) oraz routingiem korporacyjnym.</li>
+                        <li><strong>Wsparcie Użytkowników IT:</strong> Zapewnianie wsparcia technicznego sprzętu i oprogramowania, konfiguracja stacji roboczych oraz zarządzanie kopiami zapasowymi (backup).</li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <span class="badge bg-secondary fs-6 px-3 py-2 me-1">MS SQL Server</span>
+                        <span class="badge bg-secondary fs-6 px-3 py-2 me-1">SAP ERP</span>
+                        <span class="badge bg-secondary fs-6 px-3 py-2 me-1">IT Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light" id="certifications">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">CERTIFICATES AND COURSES</span>
+                <span class="lang-pl">CERTYFIKATY I KURSY</span>
+            </h2>
+            <h5 class="section-subheading text-muted">
+                <em>
+                    <span class="lang-en">Some of my achievements and credentials</span>
+                    <span class="lang-pl">Pula moich dodatkowych dyplomów i poświadczeń</span>
+                </em>
+            </h5>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="text-center mb-4 ">
+                <i class="fas fa-brain me-2"></i>Data Science and AI
+            </h3>
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/AEDS0013846195642" target="_blank" class="text-decoration-none">AI Engineer for Data Scientists Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 02.2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/PDA0011045444540" target="_blank" class="text-decoration-none">Python Data Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 09.2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/DAA0016142369453" target="_blank" class="text-decoration-none">Data Analyst Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 08.2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/DSA0019997909692" target="_blank" class="text-decoration-none">Data Scientist Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 07.2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="text-center mb-4 ">
+                <i class="fas fa-database me-2"></i>SQL and Data Engineering
+            </h3>
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/DEA0010238656470" target="_blank" class="text-decoration-none">Data Engineer Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 08.2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.datacamp.com/certificate/SQA0011820527479" target="_blank" class="text-decoration-none">SQL Associate</a>
+                            </h4>
+                            <p class="card-text text-muted">DataCamp – 08.2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="text-center mb-4 ">
+                <i class="fas fa-cloud me-2"></i>Cloud Computing
+            </h3>
+            <div class="row justify-content-center gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.credly.com/badges/2d1d9bc0-08e4-464e-a647-e30dfb777546/linked_in_profile" target="_blank" class="text-decoration-none">AWS Academy Cloud Foundations</a>
+                            </h4>
+                            <p class="card-text text-muted">AWS Academy Graduate – 12.2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.credly.com/badges/4e9076ac-a5ec-4fac-95db-7af98dd0148a" target="_blank" class="text-decoration-none">AWS Academy Cloud Web Application Builder</a>
+                            </h4>
+                            <p class="card-text text-muted">AWS Academy Graduate – 12.2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">
+                                <i class="fas fa-certificate text-primary me-2"></i>
+                                <a href="https://www.credly.com/badges/b58db5d5-5147-4e67-8b04-defc99e46938" target="_blank" class="text-decoration-none">AWS Academy Microservices and CI/CD Pipeline Builder</a>
+                            </h4>
+                            <p class="card-text text-muted">AWS Academy Graduate – 12.2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="hobby">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">Hobby</h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">What I enjoy doing in my free time</span>
+                <span class="lang-pl">Co uwielbiam robić w wolnym czasie</span>
+            </h3>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-dumbbell fa-3x text-primary mb-3"></i>
+                <h4 class="my-2">
+                    <span class="lang-en">Gym & Calisthenics</span>
+                    <span class="lang-pl">Siłownia i Kalistenika</span>
+                </h4>
+                <p class="text-muted lang-en">
+                    I love working out at the gym, with a special focus on calisthenics. Mastering bodyweight exercises teaches me discipline and builds my physical strength.
+                </p>
+                <p class="text-muted lang-pl">
+                    Uwielbiam treningi na siłowni, a moją szczególną pasją jest kalistenika. Praca z własnym ciężarem ciała uczy mnie dyscypliny i świetnie buduje siłę.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-running fa-3x text-primary mb-3"></i>
+                <h4 class="my-2">
+                    <span class="lang-en">Running</span>
+                    <span class="lang-pl">Bieganie</span>
+                </h4>
+                <p class="text-muted lang-en">
+                    I train regularly to build endurance and clear my mind. My ultimate goal and biggest sports challenge right now is to run a full marathon.
+                </p>
+                <p class="text-muted lang-pl">
+                    Regularnie trenuję bieganie, co pomaga mi oczyścić umysł i budować wytrzymałość. Moim wielkim celem sportowym jest przebiegnięcie maratonu.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                <h4 class="my-2">
+                    <span class="lang-en">Books</span>
+                    <span class="lang-pl">Książki</span>
+                </h4>
+                <p class="text-muted lang-en">
+                    I really enjoy spending my free time with a good book. I'm especially fond of Stephen King's novels because of his engaging and interesting stories.
+                </p>
+                <p class="text-muted lang-pl">
+                    Lubię spędzać wolny czas z dobrą lekturą. Szczególnie cenię twórczość Stephena Kinga za jego niesamowicie wciągające i ciekawe historie.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">
+                <span class="lang-en">Contact</span>
+                <span class="lang-pl">Kontakt</span>
+            </h2>
+            <h3 class="section-subheading text-muted">
+                <span class="lang-en">Let's get in touch!</span>
+                <span class="lang-pl">Nawiążmy współpracę!</span>
+            </h3>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8 text-center">
+                    <p class="mb-4" style="font-size: 1.3rem; color: #ffffff; font-weight: 700; text-shadow: 0 2px 8px rgba(0, 0, 0, 1);">
+                        <span class="lang-en">Message me on LinkedIn for the fastest response. Let’s connect!</span>
+                        <span class="lang-pl">Napisz do mnie na LinkedIn – tam odpowiadam najszybciej. Zapraszam do kontaktu!</span>
+                    </p>
+
+                    <a href="https://www.linkedin.com/in/grzegorzdrozdz1/" target="_blank" class="linkedin-circle-btn mb-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <div class="d-flex align-items-center justify-content-center mt-5 mb-2">
+                        <div style="height: 1px; width: 60px; background-color: rgba(255, 255, 255, 0.4);"></div>
+                        <span class="mx-3 text-uppercase" style="color: #ffffff; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);">
+                <span class="lang-en">Or use the form</span>
+                <span class="lang-pl">Lub napisz tutaj</span>
+            </span>
+                        <div style="height: 1px; width: 60px; background-color: rgba(255, 255, 255, 0.4);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/mreozzrb" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="Nowa wiadomość z portfolio (Grzegorz)">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="row align-items-stretch mb-5 mt-4">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Imię / Your Name *" required />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" name="email" type="email" placeholder="E-mail / Your Email *" required />
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <input class="form-control" id="subject" name="subject" type="text" placeholder="Temat / Subject" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control" id="message" name="message" placeholder="Treść / Your Message *" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase btn-submit" type="submit">
+                    <span class="submit-text lang-en">Send Message</span>
+                    <span class="submit-text lang-pl">Wyślij Wiadomość</span>
+                    <span class="loading-text" style="display:none;">
+                        <span class="lang-en">Sending...</span>
+                        <span class="lang-pl">Wysyłanie...</span>
+                    </span>
+                </button>
+
+                <div class="form-success mt-3" id="formSuccess" style="display:none; color: #198754; font-weight: bold;">
+                    ✅ <span class="lang-en">Message sent! I'll be in touch soon.</span><span class="lang-pl">Wiadomość wysłana pomyślnie! Odpiszę najszybciej jak to możliwe.</span>
+                </div>
+                <div class="form-error mt-3" id="formError" style="display:none; color: #dc3545; font-weight: bold;">
+                    ⚠️ <span class="lang-en">Something went wrong. Please try again.</span><span class="lang-pl">Coś poszło nie tak na serwerze! Skontaktuj się ze mną przez LinkedIn.</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer py-4" style="background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);">
+    <div class="container" >
+        <div class="row align-items-center">
+            <div class="text-center">
+                Copyright &copy; Grzegorz Dróżdż 2026
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    let typedMain = null;
+    let typedSub = null;
+
+    function initTyped(lang) {
+        // Zniszczenie starych instancji by odblokować miejsce
+        if (typedMain !== null) typedMain.destroy();
+        if (typedSub !== null) typedSub.destroy();
+
+        // Dodatkowe, manualne wyczyszczenie
+        document.getElementById('typed-main').innerHTML = '';
+        document.getElementById('typed-sub').innerHTML = '';
+
+        const mainStr = lang === 'pl' ? ["Cześć, jestem Grzegorz Dróżdż"] : ["Hi, I'm Grzegorz Dróżdż"];
+        const subStr = lang === 'pl' ? [
+            "licencjat Informatyki · Entuzjasta Data Science",
+            "Obecnie na studiach magisterskich z Informatyki ze specjalizacją w AI"
+        ] : [
+            "Bachelor of Computer Science · Data Science Enthusiast",
+            "Currently pursuing a Master’s degree in Computer Science with a specialization in AI"
+        ];
+
+        typedMain = new Typed('#typed-main', {
+            strings: mainStr,
+            typeSpeed: 50,
+            loop: false,
+            showCursor: false,
+            onComplete: function() {
+                typedSub = new Typed('#typed-sub', {
+                    strings: subStr,
+                    typeSpeed: 40,
+                    backSpeed: 30,
+                    backDelay: 2500,
+                    loop: true,
+                    showCursor: false
+                });
+            }
+        });
+    }
+
+    function toggleLang() {
+        const htmlTag = document.documentElement;
+        const currentLang = htmlTag.getAttribute('lang') || 'en';
+        const newLang = currentLang === 'en' ? 'pl' : 'en';
+
+        htmlTag.setAttribute('lang', newLang);
+        localStorage.setItem('lang', newLang);
+        initTyped(newLang);
+    }
+
+    // Odczekaj na wczytanie się całego pliku DOM przed aktywacją
+    document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem('lang') || 'en';
+        document.documentElement.setAttribute('lang', savedLang);
+        initTyped(savedLang);
+    });
+</script>
+
+<script>
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        const formSuccess = document.getElementById('formSuccess');
+        const formError   = document.getElementById('formError');
+        const submitBtn   = contactForm.querySelector('.btn-submit');
+        const submitTextEN = submitBtn.querySelector('.submit-text.lang-en');
+        const submitTextPL = submitBtn.querySelector('.submit-text.lang-pl');
+        const loadingText = submitBtn.querySelector('.loading-text');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            formSuccess.style.display = 'none';
+            formError.style.display   = 'none';
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('loading');
+            submitTextEN.style.display = 'none';
+            submitTextPL.style.display = 'none';
+            loadingText.style.display = 'inline';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    formSuccess.style.display = 'block';
+                    contactForm.reset();
+                    setTimeout(() => { formSuccess.style.display = 'none'; }, 5000);
+                } else {
+                    formError.style.display = 'block';
+                }
+            } catch (err) {
+                formError.style.display = 'block';
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('loading');
+
+            const lang = document.documentElement.getAttribute('lang');
+            if(lang === 'pl') {
+                submitTextPL.style.display = 'inline';
+            } else {
+                submitTextEN.style.display = 'inline';
+            }
+            loadingText.style.display = 'none';
+        });
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Skrypt uruchomi się TYLKO na urządzeniach z myszką (żeby nie psuć na telefonach)
+        if (window.matchMedia("(pointer: fine)").matches) {
+            const cursorDot = document.querySelector("[data-cursor-dot]");
+            const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+            window.addEventListener("mousemove", function (e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                // Kropka podąża natychmiast
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                // Okrąg podąża z gładkim opóźnieniem
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 400, fill: "forwards" });
+            });
+
+            // Efekt magnetyczny: powiększenie po najechaniu na klikalne elementy
+            const interactables = document.querySelectorAll("a, button, input, textarea");
+            interactables.forEach(el => {
+                el.addEventListener("mouseenter", () => {
+                    cursorOutline.style.width = "50px";
+                    cursorOutline.style.height = "50px";
+                    cursorOutline.style.backgroundColor = "rgba(255, 200, 0, 0.15)";
+                    cursorOutline.style.borderColor = "transparent";
+                });
+                el.addEventListener("mouseleave", () => {
+                    cursorOutline.style.width = "35px";
+                    cursorOutline.style.height = "35px";
+                    cursorOutline.style.backgroundColor = "transparent";
+                    cursorOutline.style.borderColor = "rgba(255, 200, 0, 0.7)";
+                });
+            });
+        }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const progressBar = document.getElementById("scrollProgress");
+        if (progressBar) {
+            window.addEventListener("scroll", () => {
+                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercentage = (scrollTop / scrollHeight) * 100;
+                progressBar.style.width = scrollPercentage + "%";
+            });
+        }
+    });
+</script>
+</body>
+</html>
