@@ -12146,12 +12146,14 @@ html { scroll-behavior: smooth; }
   border-color: #ffb300 !important;
 }
 
-/* Zmiana koloru trzech kresek (ikony) na pomarańczowy */
+/* Zmiana koloru trzech kresek (ikony) na kolor #ffb300 */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.apache.org/licenses/LICENSE-2.0'%3E%3Cpath stroke='rgba(255, 75, 43, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.apache.org/licenses/LICENSE-2.0'%3E%3Cpath stroke='rgba(255, 179, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-/* Usuwa szary cień (outline) po kliknięciu i dodaje delikatną pomarańczową poświatę */
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 75, 43, 0.25) !important;
+/* Całkowite usunięcie cienia/poświaty i obramowania po kliknięciu (focus) */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important;
+  outline: none !important;
 }
