@@ -1522,42 +1522,57 @@
 <script src="js/scripts.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
 <script>
-    let typedMain = null;
-    let typedSub = null;
+    let animMain = null;
+    let animSub = null;
+
+    // Silnik pisania odporny na throttling mobilny
+    function typeText(elementId, text, speed, onComplete) {
+        const el = document.getElementById(elementId);
+        if (!el) return null;
+        el.textContent = '';
+
+        let charIndex = 0;
+        let lastTime = performance.now();
+        let isCancelled = false;
+
+        function frame(now) {
+            if (isCancelled) return;
+
+            // Liczy realny czas w milisekundach - identycznie na PC i telefonie
+            if (now - lastTime >= speed) {
+                lastTime = now;
+                charIndex++;
+                el.textContent = text.slice(0, charIndex);
+
+                if (charIndex >= text.length) {
+                    if (onComplete) onComplete();
+                    return;
+                }
+            }
+            requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+
+        return {
+            stop: () => { isCancelled = true; }
+        };
+    }
 
     function initTyped(lang) {
-        // Zniszczenie starych instancji by odblokować miejsce
-        if (typedMain !== null) typedMain.destroy();
-        if (typedSub !== null) typedSub.destroy();
+        if (animMain) animMain.stop();
+        if (animSub) animSub.stop();
 
-        // Dodatkowe, manualne wyczyszczenie
-        document.getElementById('typed-main').innerHTML = '';
-        document.getElementById('typed-sub').innerHTML = '';
+        const mainStr = lang === 'pl'
+            ? "Cześć, jestem Grzegorz Dróżdż"
+            : "Hi, I'm Grzegorz Dróżdż";
 
-        const mainStr = lang === 'pl' ? ["Cześć, jestem Grzegorz Dróżdż"] : ["Hi, I'm Grzegorz Dróżdż"];
-        const subStr = lang === 'pl' ? [
-            "licencjat Informatyki · Entuzjasta Data Science",
-            "Obecnie na studiach magisterskich z Informatyki ze specjalizacją w AI"
-        ] : [
-            "Bachelor of Computer Science · Data Science Enthusiast",
-            "Currently pursuing a Master’s degree in Computer Science with a specialization in AI"
-        ];
+        const subStr = lang === 'pl'
+            ? "licencjat Informatyki · Entuzjasta Data Science"
+            : "Bachelor of Computer Science · Data Science Enthusiast";
 
-        typedMain = new Typed('#typed-main', {
-            strings: mainStr,
-            typeSpeed: 50,
-            loop: false,
-            showCursor: false,
-            onComplete: function() {
-                typedSub = new Typed('#typed-sub', {
-                    strings: subStr,
-                    typeSpeed: 40,
-                    backSpeed: 30,
-                    backDelay: 2500,
-                    loop: true,
-                    showCursor: false
-                });
-            }
+        // speed: 50 ms na znak — DOKŁADNIE tyle ile ustawiłeś, bez przekłamań
+        animMain = typeText('typed-main', mainStr, 50, () => {
+            animSub = typeText('typed-sub', subStr, 40);
         });
     }
 
@@ -1571,7 +1586,6 @@
         initTyped(newLang);
     }
 
-    // Odczekaj na wczytanie się całego pliku DOM przed aktywacją
     document.addEventListener("DOMContentLoaded", () => {
         const savedLang = localStorage.getItem('lang') || 'en';
         document.documentElement.setAttribute('lang', savedLang);
