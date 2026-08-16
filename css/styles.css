@@ -12058,21 +12058,38 @@ section#certifications {
   .cursor-dot, .cursor-outline {
     position: fixed;
     top: 0; left: 0;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 999999;
-    pointer-events: none; /* Zapobiega blokowaniu kliknięć przez kursor */
+    pointer-events: none;
+    will-change: transform;
   }
 
   .cursor-dot {
-    width: 8px; height: 8px;
-    background-color: #ffc800; /* Główny żółty kolor */
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    background-color: #ffc800;
   }
 
   .cursor-outline {
-    width: 35px; height: 35px;
+    width: 35px;
+    height: 35px;
+    margin-top: -17.5px;
+    margin-left: -17.5px;
     border: 2px solid rgba(255, 200, 0, 0.7);
-    transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+    background-color: transparent;
+    transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out, margin 0.2s ease-out;
+  }
+
+  /* Efekt powiększenia po najechaniu na linki / przyciski */
+  .cursor-outline.cursor-hover {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: rgba(255, 200, 0, 0.15);
+    border-color: transparent;
   }
 }
 @media (pointer: coarse) {
@@ -12156,4 +12173,18 @@ html { scroll-behavior: smooth; }
 .navbar-toggler:active {
   box-shadow: none !important;
   outline: none !important;
+}
+/* Optymalizacja wydajności na urządzeniach mobilnych */
+@media (max-width: 768px) {
+  /* Wyłączenie ciężkiej pętli gradientu, która dławi procesor telefonu */
+  .page-section#profile::before {
+    animation: none !important;
+    background: #ffc800 !important;
+  }
+
+  /* Wyłączenie zbędnego niestandardowego kursora na dotykowych ekranach */
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
 }

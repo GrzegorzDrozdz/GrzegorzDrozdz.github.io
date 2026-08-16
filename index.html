@@ -112,7 +112,7 @@
 <header class="masthead" style="padding-bottom: 4rem;">
     <div class="container d-flex flex-column align-items-center justify-content-center text-center" style="position: relative; z-index: 1;">
         <img
-                src="assets\img\New_foto.webp"
+                src="assets/img/New_foto.webp"
                 alt="Grzegorz Dróżdż Profile Photo"
                 style="
                 max-width: clamp(175px, 50vw, 275px);
@@ -1634,43 +1634,45 @@
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Skrypt uruchomi się TYLKO na urządzeniach z myszką (żeby nie psuć na telefonach)
-        if (window.matchMedia("(pointer: fine)").matches) {
-            const cursorDot = document.querySelector("[data-cursor-dot]");
-            const cursorOutline = document.querySelector("[data-cursor-outline]");
+        // Uruchamiaj TYLKO na urządzeniach ze wskaźnikiem precyzyjnym (myszka)
+        if (!window.matchMedia("(pointer: fine)").matches) return;
 
-            window.addEventListener("mousemove", function (e) {
-                const posX = e.clientX;
-                const posY = e.clientY;
+        const cursorDot = document.querySelector(".cursor-dot");
+        const cursorOutline = document.querySelector(".cursor-outline");
 
-                // Kropka podąża natychmiast
-                cursorDot.style.left = `${posX}px`;
-                cursorDot.style.top = `${posY}px`;
+        if (!cursorDot || !cursorOutline) return;
 
-                // Okrąg podąża z gładkim opóźnieniem
-                cursorOutline.animate({
-                    left: `${posX}px`,
-                    top: `${posY}px`
-                }, { duration: 400, fill: "forwards" });
-            });
+        let mouseX = -100, mouseY = -100;
+        let outlineX = -100, outlineY = -100;
 
-            // Efekt magnetyczny: powiększenie po najechaniu na klikalne elementy
-            const interactables = document.querySelectorAll("a, button, input, textarea");
-            interactables.forEach(el => {
-                el.addEventListener("mouseenter", () => {
-                    cursorOutline.style.width = "50px";
-                    cursorOutline.style.height = "50px";
-                    cursorOutline.style.backgroundColor = "rgba(255, 200, 0, 0.15)";
-                    cursorOutline.style.borderColor = "transparent";
-                });
-                el.addEventListener("mouseleave", () => {
-                    cursorOutline.style.width = "35px";
-                    cursorOutline.style.height = "35px";
-                    cursorOutline.style.backgroundColor = "transparent";
-                    cursorOutline.style.borderColor = "rgba(255, 200, 0, 0.7)";
-                });
-            });
+        window.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            // Kropka podąża natychmiast na GPU
+            cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        }, { passive: true });
+
+        // Płynny interpolation (lerp) dla obwódki bez obciążania wątku
+        function renderCursor() {
+            outlineX += (mouseX - outlineX) * 0.15;
+            outlineY += (mouseY - outlineY) * 0.15;
+            cursorOutline.style.transform = `translate3d(${outlineX}px, ${outlineY}px, 0)`;
+            requestAnimationFrame(renderCursor);
         }
+        requestAnimationFrame(renderCursor);
+
+        // Delegacja zdarzeń zamiast pętli po całym dokumencie
+        document.addEventListener("mouseover", (e) => {
+            if (e.target.closest("a, button, input, textarea, .btn, [role='button']")) {
+                cursorOutline.classList.add("cursor-hover");
+            }
+        });
+
+        document.addEventListener("mouseout", (e) => {
+            if (e.target.closest("a, button, input, textarea, .btn, [role='button']")) {
+                cursorOutline.classList.remove("cursor-hover");
+            }
+        });
     });
 </script>
 <script>
